@@ -12,6 +12,7 @@ RUN apk add --no-cache gcc g++ musl-dev make curl curl-dev openssl-dev zlib-dev 
 
 RUN apk add --no-cache php8 \
     php8-common \
+    php8-posix \
     php8-dev \
     php8-pear \
     php8-fpm \
