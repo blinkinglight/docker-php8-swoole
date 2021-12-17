@@ -40,7 +40,7 @@ build custom comtainer:
 docker built -t my-test-app .
 ```
 
-share your .env to container:
+share your .env to container and expose container 80 port to host 8000:
 ```
-docker run --rm -it -v $(pwd)/.env:/var/www/.env:z my-test-app
+docker run --rm -it -v $(pwd)/.env:/var/www/.env:z -p 8000:80 my-test-app
 ```
