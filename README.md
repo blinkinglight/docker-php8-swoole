@@ -34,3 +34,8 @@ example of entrypoint.sh
 /usr/bin/php artisan migrate --force
 /usr/bin/php artisan octane:start --host=0.0.0.0 --port=80
 ```
+
+share your .env to container:
+```
+docker run --rm -it -v $(pwd)/.env:/var/www/.env:z [yourcontainername]
+```
