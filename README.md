@@ -35,7 +35,12 @@ example of entrypoint.sh
 /usr/bin/php artisan octane:start --host=0.0.0.0 --port=80
 ```
 
+build custom comtainer:
+```
+docker built -t my-test-app .
+```
+
 share your .env to container:
 ```
-docker run --rm -it -v $(pwd)/.env:/var/www/.env:z [yourcontainername]
+docker run --rm -it -v $(pwd)/.env:/var/www/.env:z my-test-app
 ```
