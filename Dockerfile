@@ -37,7 +37,12 @@ RUN apk add --no-cache php8 \
     php8-tokenizer \
     php8-pecl-redis \
     php8-pcntl \
-    php8-mysqlnd 
+    php8-mysqlnd \
+    php8-soap \
+    php8-pecl-memcached \
+    php8-pecl-imagick \
+    php8-gd \
+    php8-imap
 
 # RUN /usr/bin/pecl8 channel-update pecl.php.net
 RUN /usr/bin/pear8 config-set php_ini /etc/php8/php.ini
